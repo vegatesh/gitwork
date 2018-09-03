@@ -102,13 +102,13 @@ li.a{
   <form action="display.php" method="POST" id="nameform" >
    <h3> Let us know how we can improve freecodecamp </h3>
     <ul>
-     <li class="a"> Sweet Name:  <div="tot-box"><Input type="text" name="textbox1" size="40" class=" 
+     <li class="a"> Sweet Name:  <div="tot-box"><Input type="text" name="textbox1"pattern="[a-zA-Z]*" size="40"  class=" 
       box1" required ></div>
      </li>
-     <li> Email:<div="tot-box"> <Input type="Email" name="textbox2" size="40" class="box2" required
+     <li> Email:<div="tot-box"> <Input type="Email" name="textbox2" size="40" class="box2"  pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" / required
      $Email=$_POST['textbox2']>
      </li> <br></div>
-     <li> Age:<div="tot-box"> <Input type="text" name="textbox3" size="40" class="box3" required>  
+     <li> Age:<div="tot-box"> <Input type="number" name="textbox3" size="60" class="box3" required>  
       </div>
      </li>
     </ul>
